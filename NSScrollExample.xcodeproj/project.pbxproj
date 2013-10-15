@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A32ED0D180D7AB500FD1DC3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A32ED0B180D7AB500FD1DC3 /* ViewController.m */; };
+		2A32ED0E180D7AB500FD1DC3 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A32ED0C180D7AB500FD1DC3 /* ViewController.xib */; };
+		2A32ED12180DAE7600FD1DC3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A32ED11180DAE7600FD1DC3 /* QuartzCore.framework */; };
 		2AF1985D180C4F7300D861B3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF1985C180C4F7300D861B3 /* Cocoa.framework */; };
 		2AF19867180C4F7300D861B3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2AF19865180C4F7300D861B3 /* InfoPlist.strings */; };
 		2AF19869180C4F7300D861B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF19868180C4F7300D861B3 /* main.m */; };
@@ -31,6 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A32ED0A180D7AB500FD1DC3 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2A32ED0B180D7AB500FD1DC3 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2A32ED0C180D7AB500FD1DC3 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		2A32ED11180DAE7600FD1DC3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		2AF19859180C4F7300D861B3 /* NSScrollExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSScrollExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AF1985C180C4F7300D861B3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		2AF1985F180C4F7300D861B3 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -57,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A32ED12180DAE7600FD1DC3 /* QuartzCore.framework in Frameworks */,
 				2AF1985D180C4F7300D861B3 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +103,7 @@
 		2AF1985B180C4F7300D861B3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2A32ED11180DAE7600FD1DC3 /* QuartzCore.framework */,
 				2AF1985C180C4F7300D861B3 /* Cocoa.framework */,
 				2AF1987B180C4F7300D861B3 /* XCTest.framework */,
 				2AF1985E180C4F7300D861B3 /* Other Frameworks */,
@@ -118,6 +127,9 @@
 				2AF1986E180C4F7300D861B3 /* AppDelegate.h */,
 				2AF1986F180C4F7300D861B3 /* AppDelegate.m */,
 				2AF19871180C4F7300D861B3 /* MainMenu.xib */,
+				2A32ED0A180D7AB500FD1DC3 /* ViewController.h */,
+				2A32ED0B180D7AB500FD1DC3 /* ViewController.m */,
+				2A32ED0C180D7AB500FD1DC3 /* ViewController.xib */,
 				2AF19874180C4F7300D861B3 /* Images.xcassets */,
 				2AF19863180C4F7300D861B3 /* Supporting Files */,
 			);
@@ -230,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A32ED0E180D7AB500FD1DC3 /* ViewController.xib in Resources */,
 				2AF19867180C4F7300D861B3 /* InfoPlist.strings in Resources */,
 				2AF19875180C4F7300D861B3 /* Images.xcassets in Resources */,
 				2AF1986D180C4F7300D861B3 /* Credits.rtf in Resources */,
@@ -252,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A32ED0D180D7AB500FD1DC3 /* ViewController.m in Sources */,
 				2AF19870180C4F7300D861B3 /* AppDelegate.m in Sources */,
 				2AF19869180C4F7300D861B3 /* main.m in Sources */,
 			);
@@ -464,6 +478,7 @@
 				2AF1988C180C4F7300D861B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2AF1988D180C4F7300D861B3 /* Build configuration list for PBXNativeTarget "NSScrollExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -472,6 +487,7 @@
 				2AF1988F180C4F7300D861B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
