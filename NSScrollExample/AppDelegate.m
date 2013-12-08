@@ -36,17 +36,14 @@
 
 - (void)scrollToXPosition:(float)xCoord {
     
-    NSPoint pointToScrollTo = NSMakePoint (xCoord,0);
-
-//    [NSAnimationContext beginGrouping];
-//    [[NSAnimationContext currentContext] setDuration:20.0];
-    //    [(CAScrollLayer*)[[_scrollView contentView] layer] scrollToPoint: pointToScrollTo];
-    [[_scrollView contentView] scrollToPoint: pointToScrollTo];
-
-    [_scrollView reflectScrolledClipView: [_scrollView contentView]];
-//    [NSAnimationContext endGrouping];
-    
-   
+    [NSAnimationContext beginGrouping];
+    [[NSAnimationContext currentContext] setDuration:0.5];
+    NSClipView* clipView = [_scrollView contentView];
+    NSPoint newOrigin = [clipView bounds].origin;
+    newOrigin.x = xCoord;
+    [[clipView animator] setBoundsOrigin:newOrigin];
+    [_scrollView reflectScrolledClipView: [_scrollView contentView]]; // may not bee necessary
+    [NSAnimationContext endGrouping];
 }
 
 - (IBAction)showRight:(id)sender {
